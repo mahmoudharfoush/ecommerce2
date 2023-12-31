@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useContext } from 'react'
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom'
-import ReactImageMagnify from 'react-image-magnify';
 import { CartContext } from '../context/Cart.jsx';
 
 function Product() {
@@ -27,26 +26,7 @@ if(isLoading){
     <div className="contanier">
     <div className="row">
         <div className='col-lg-4'>
-         {data.subImages.map( (img,index)=> 
-         <React.Fragment key={index}>
-         <ReactImageMagnify {...{
-            smallImage: {
-                alt: 'Wristwatch by Ted Baker London',
-                isFluidWidth: true,
-                src: img.secure_url
-            },
-            largeImage: {
-                src: img.secure_url,
-                width: 1200,
-                height: 1800
-            },
-            enlargedImagePosition:'over',
-             
-            
-        }} />
-         </React.Fragment>
-        
-         )}
+   
         </div>
          
         <div className='col-lg-8'>
