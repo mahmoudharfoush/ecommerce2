@@ -1,0 +1,31 @@
+.profile{
+    background-color: rgb(223, 224, 224);
+    display: flex;
+    gap:30px;
+    height: 100;
+    
+}
+
+.profileLinks nav {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    align-items: center;
+    width: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+   
+    
+}
+
+
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+
+}
